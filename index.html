@@ -5,46 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>   
     
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
 </head>
-<style>
-        body{background-color: black;
-            color:white;
-            text-align:center;
-        }
-        
-        .header {font-size: 60px;}
-
-        .content {font-size: 30px;}
-
-        .footer {font-size: 22px;}
-
-        a:link {color:white;}
-        a:hover {color:lightgrey;}
-        a:visited {color:white;}
-</style>
-
 
 <body>
-    <header class="header">
-        <h1>Jamie Shaw</h1>
+    <header class="container-fluid text-center">
+        <h1 class="display-1">Jamie Shaw</h1>
+        <div class="container-fluid" style="height: 20px;"></div>
     </header>
     <main class ="content">
-        <p><a href="About_Me.html">About me</a></p>
-        <img src="Background.png" width=25% />
-        <table style="margin-left: 35%; margin-right: 30%; width: 35%;">
-            <tr>
-                <td style="text-align: left; width: 50%;">C++</td>
-                <td style="text-align: right; width: 50%;">Web Development</td>
-            </tr>
-        </table>
+        <div id="carousel" class="carousel slide" style="height: 700px;">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <h2>About Me</h2>                    
+                </div>
+                <div class="carousel-item h-100">
+                    <h2>QMaths</h2> 
+                </div>
+                <div class="carousel-item h-100">
+                    <h2>QGraphics</h2>
+                </div>
+                <div class="carousel-item h-100">
+                    <h2>Draughts</h2>
+                </div>
+                <div class="carousel-item h-100">
+                    <h2>Algebra System</h2>
+                </div>
+            </div>
+            <button class="carousel-control-prev h-100" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next h-100" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+        </div>
     </main>
     <footer class="footer">
+        <div class="container-fluid" style="height: 40px;"></div>
         <p>contact me: <a href="mailto:shawrie777@hotmail.com">Send email</a></p>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
 </body>
 </html>
